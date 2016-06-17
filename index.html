@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>eu wot m8</title>
+
+        <style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #container {
+            width: 75%;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        #container p {
+            font-size: 24px;
+            margin-bottom: 25px;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <p>
+                If we remain in the EU,<br />
+                <span id="how-many">100</span> <span id="what">Parisians</span><br /><em>will</em><br /><span id="consequence">hand out croissants at King's Cross</span>.
+            </p>
+
+            <img src="farage.png" />
+
+            <h1>eu wot m8?</h1>
+        </div>
+
+        <script type="text/javascript">
+            var what = [
+                    'Romanians',
+                    'Bulgarians',
+                    'French',
+                    'Russian football hooligans',
+                    'businesses',
+                    'locusts',
+                    'driver-less cars',
+                    'EU council members',
+                    'elves',
+                    'channel tunnel rats',
+                    'Swedish sea lions',
+                    'Dutch cyclists',
+                    'German sausage merchants',
+                    'previous Eurovision winners'
+                ],
+                consequences = [
+                    'attempt to resurrect Jeremy Beadle',
+                    'release a barrage of catchy hit singles',
+                    'enforce all TV channels play continuous re-runs of Jim\'ll Fix It',
+                    'take up residence in Westminster Cathedral',
+                    'cause delays on the Central Line',
+                    'ban black pudding',
+                    'change the recipe of Daddie\'s Brown Sauce',
+                    'unseason the popcorn in every Vue cinema',
+                    'install speed cameras on the A1',
+                    'build segragated cycle ways through Manchester',
+                    'post selfies from Lake Windermere to Instagram',
+                    'attempt to walk Hadrian\'s wall',
+                    'perform pagan rituals at Stonehenge',
+                    'raise the price of Magnums',
+                    'rebrand Whetherspoons as "Europints"',
+                    're-release Monty Python\'s Holy Grail with poor euro voice overs',
+                    'hand out croissants at King\'s Cross'
+                ],
+                numbers = [
+                    '100,000',
+                    '2 million',
+                    '56 billion',
+                    '10 million',
+                    '1 million',
+                    '42',
+                    '552',
+                    '852,526,788',
+                    '3',
+                    '120 billion',
+                    '99 million',
+                    '999 billion',
+                    '5 million',
+                    '8,219',
+                    '54',
+                    '812 billion'
+                ];
+
+            function arrRandom(arr) {
+                return arr[Math.floor(Math.random()*arr.length)]
+            }
+
+            document.getElementById('how-many').innerHTML = arrRandom(numbers);
+            document.getElementById('what').innerHTML = arrRandom(what);
+            document.getElementById('consequence').innerHTML = arrRandom(consequences);
+        </script>
+
+    </body>
+</html>
